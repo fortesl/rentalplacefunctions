@@ -1,0 +1,12 @@
+{
+  "name": "rentalplacefunctions",
+  "version": "",
+  "description": "",
+  "scripts": {
+    "test": "echo \"No tests yet...\""
+  },
+  "author": "",
+  "dependencies": {
+    "request": "^2.88.0"
+  }
+}
