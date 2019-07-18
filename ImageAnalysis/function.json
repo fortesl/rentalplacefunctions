@@ -7,6 +7,15 @@
       "direction": "in",
       "path": "images/{name}",
       "connection": "ImagesStorage"
+    },
+    {
+      "name": "ImageAnalysis",
+      "direction": "out",
+      "type": "cosmosDB",
+      "databaseName": "rentalplace",
+      "collectionName": "images",
+      "connecton": "ImagesAnalysis",
+      "ConnectionStringSetting": "ImageAnalisys"
     }
   ]
 }

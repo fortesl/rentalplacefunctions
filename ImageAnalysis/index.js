@@ -16,6 +16,11 @@ module.exports = async function (context, myBlob) {
     request(options, (err, results) => {
         if (err) return context.done();
 
+        context.bindings.imageAnalysis = {
+            imageId: context.bindingData.name,
+            analysis: JSON.parse(results.body)
+        }
+
         context.log(results.body);
 
         context.done();
