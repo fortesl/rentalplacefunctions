@@ -14,7 +14,7 @@ module.exports = async function (context, myBlob) {
     };
 
     request(options, (err, results) => {
-        if (err) return context.done();
+        if (err) return context.done(err);
 
         context.bindings.imageAnalysis = {
             imageId: context.bindingData.name,
